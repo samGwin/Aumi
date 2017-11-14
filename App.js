@@ -3,6 +3,7 @@ import { StyleSheet, Text, View, Button } from 'react-native';
 import { StackNavigator } from 'react-navigation';
 import DeviceList from './DeviceList';
 import SettingsScreen from './SettingsScreen';
+import ColorPickerScreen from './ColorPickerScreen';
 
 class HomeScreen extends React.Component {
 
@@ -29,7 +30,8 @@ class HomeScreen extends React.Component {
 
 const SimpleApp = StackNavigator({
   Home: { screen: HomeScreen },
-  Settings: { screen: SettingsScreen }
+  Settings: { screen: SettingsScreen },
+  ColorPicker: {screen: ColorPickerScreen }
 });
 
 export default class App extends React.Component {
