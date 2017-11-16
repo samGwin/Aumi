@@ -60,7 +60,7 @@ export default class SettingsScreen extends React.Component {
               onPress={() => this.onColorPress()}
             >
               <Left>
-                <Button style={{ backgroundColor: '#FF9501' }}>
+                <Button style={{ backgroundColor: '#4CDA64' }}>
                   <MaterialIcons name="color-lens" active style={{fontSize: 16}} />
                 </Button>
               </Left>
@@ -68,6 +68,8 @@ export default class SettingsScreen extends React.Component {
                 <Text>COLOR</Text>
               </Body>
               <Right>
+                {Platform.OS === "ios" && <Icon active name="arrow-forward" />}
+                {Platform.OS === "android" && <MaterialIcons name="chevron-right" active style={{fontSize: 16}} />}                
               </Right>
             </ListItem>
             <ListItem icon>
@@ -81,6 +83,7 @@ export default class SettingsScreen extends React.Component {
               </Body>
               <Right>
                 {Platform.OS === "ios" && <Icon active name="arrow-forward" />}
+                {Platform.OS === "android" && <MaterialIcons name="chevron-right" active style={{fontSize: 16}} />}
               </Right>
             </ListItem>
             <ListItem icon>

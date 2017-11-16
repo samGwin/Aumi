@@ -12,5 +12,11 @@ export default {
   },
   mb: {
     marginBottom: 15
+  },
+  listItem: {
+    height: 60
+  },
+  listItem2: {
+    height: 52
   }
 };
