@@ -21,6 +21,10 @@ export default class SettingsScreen extends React.Component {
     this.props.navigation.navigate('ColorPicker')
   }
 
+  onTimerPress() {
+    this.props.navigation.navigate('Timer')
+  }
+
   onValueChange() {
     this.setState({switch: !this.state.switch})
   }
@@ -72,7 +76,10 @@ export default class SettingsScreen extends React.Component {
                 {Platform.OS === "android" && <MaterialIcons name="chevron-right" active style={{fontSize: 16}} />}                
               </Right>
             </ListItem>
-            <ListItem icon>
+            <ListItem 
+              icon
+              onPress={() => this.onTimerPress()}
+            >
               <Left>
                 <Button style={{ backgroundColor: "#007AFF" }}>
                   <Icon active name="wifi" />

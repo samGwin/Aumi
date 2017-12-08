@@ -46,6 +46,7 @@ export default class HomeScreen extends React.Component {
                 <Title>AUMI</Title>
               </Body>
             </Header>
+            
             <Content>
               <List 
                 dataArray={this.state.items}

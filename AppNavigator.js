@@ -10,13 +10,15 @@ import HomeScreen from './HomeScreen';
 import SettingsScreen from './SettingsScreen';
 import ColorPickerScreen from './ColorPickerScreen';
 import ListIcon from './list-icon';
+import TimerScreen from './TimerScreen';
 
 const AppNavigator = StackNavigator(
   {
     Home: { screen: HomeScreen },
     Settings: { screen: SettingsScreen },
     ColorPicker: {screen: ColorPickerScreen },
-    ListIcon: {screen: ListIcon}
+    ListIcon: {screen: ListIcon},
+    Timer: {screen: TimerScreen}
   },
   {
     initialRouteName: "Home",
